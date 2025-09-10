@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Scalia</title>
+  <style>
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; color:#1f2937; }
+    header { background:#fff; box-shadow:0 2px 6px rgba(0,0,0,0.1); position:sticky; top:0; z-index:50; }
+    header .container { max-width:1100px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:1rem; }
+    header nav a { margin-left:1.5rem; text-decoration:none; color:#374151; font-weight:500; }
+    header nav a:hover { color:#0f3d5e; }
+    .hero { background:linear-gradient(to right,#0f3d5e,#1e40af); color:#fff; text-align:center; padding:5rem 1rem; }
+    .hero h1 { font-size:2rem; max-width:800px; margin:auto; font-weight:700; }
+    .hero p { margin:1rem auto; max-width:600px; font-size:1.1rem; }
+    section { max-width:1100px; margin:auto; padding:4rem 1rem; }
+    section h2 { font-size:2rem; color:#0f3d5e; margin-bottom:1rem; }
+    .services { display:grid; grid-template-columns:1fr; gap:1.5rem; }
+    .service { background:#fff; border-radius:1rem; padding:1.5rem; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .service h3 { color:#0f3d5e; margin-bottom:0.5rem; }
+    .contacts { display:grid; grid-template-columns:1fr; gap:2rem; }
+    .contacts ul { list-style:none; padding:0; }
+    .contacts li { margin:0.5rem 0; display:flex; align-items:center; gap:0.5rem; }
+    footer { background:#0f3d5e; color:#fff; text-align:center; padding:1.5rem; }
+    @media(min-width:768px){
+      .services { grid-template-columns:repeat(3,1fr); }
+      .contacts { grid-template-columns:1fr 1fr; }
+      .hero h1 { font-size:2.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo" style="font-weight:bold; color:#0f3d5e; font-size:1.2rem;">Studio Scalia</div>
+      <nav>
+        <a href="#about">Chi siamo</a>
+        <a href="#services">Servizi</a>
+        <a href="#contacts">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Consulenza e Intermediazione tra Aziende e Pubblica Amministrazione</h1>
+    <p>Lo Studio Scalia a Catania è il tuo partner affidabile per gestire relazioni, pratiche e strategie con la PA.</p>
+  </section>
+
+  <section id="about">
+    <h2>Chi siamo</h2>
+    <p>
+      Studio Scalia nasce con l’obiettivo di supportare le aziende nel complesso mondo della burocrazia pubblica.
+      Con competenza ingegneristica e capacità di mediazione, offriamo un punto di riferimento per chi cerca
+      efficienza, trasparenza e risultati concreti.
+    </p>
+  </section>
+
+  <section id="services" style="background:#f9fafb;">
+    <h2>I nostri servizi</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Consulenza alle aziende</h3>
+        <p>Analisi e supporto tecnico-amministrativo per affrontare al meglio rapporti con la PA.</p>
+      </div>
+      <div class="service">
+        <h3>Intermediazione</h3>
+        <p>Gestione dei rapporti e facilitazione della comunicazione con gli enti pubblici.</p>
+      </div>
+      <div class="service">
+        <h3>Progettazione e pratiche</h3>
+        <p>Assistenza nella preparazione di documenti, bandi e progetti per il settore pubblico.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <h2>Contattaci</h2>
+    <div class="contacts">
+      <div>
+        <p>Vuoi maggiori informazioni o fissare un appuntamento? Scrivici o chiamaci, saremo lieti di aiutarti.</p>
+        <ul>
+          <li>📞 +39 XXX XXX XXXX</li>
+          <li>✉️ info@studioscalia.it</li>
+          <li>📍 Via [Indirizzo], 95100 Catania (CT)</li>
+        </ul>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3185.755!2d15.087!3d37.502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313f0!2sCatania!5e0!3m2!1sit!2sit!4v000000000"
+          width="100%"
+          height="280"
+          style="border:0; border-radius:1rem; box-shadow:0 2px 6px rgba(0,0,0,0.1);"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <script>document.write(new Date().getFullYear())</script> Studio Scalia — Tutti i diritti riservati</p>
+  </footer>
+</body>
+</html>
